@@ -707,21 +707,16 @@
       "size": 180851
     },
     {
-      "path": "MyPuppyD.exe",
-      "sha256": "799e922d6ef432f536388cdba09a45492183ffc14a241d4af0aa99782e578d02",
-      "size": 22261760
-    },
-    {
       "path": "user_messages/english.lang",
-      "sha256": "9804f71cdef97ef62be4b5437d821cfaa2757e683d9c860938d8ae31a1b3b14b",
-      "size": 34058
+      "sha256": "3b29f9c3d9aa765b2a1c989ed70d314c451f00ce998ddc43e57bfcf63d895d8c",
+      "size": 34636
     },
     {
       "path": "user_messages/polski.lang",
-      "sha256": "3b70af9654440fad20fbbabc2eef620e929757d70f60e2a7a5fa73820c8ad1da",
-      "size": 35748
+      "sha256": "8e773431ecd53c7d72a2f06309753f1625aa09134a80adcdc6b1d027e9963d87",
+      "size": 36335
     }
   ],
-  "files_digest": "97e9e2f735a21a0377504d5561150a05db75bfa4d399b10b2252036add3a468c",
-  "sig": "05/VM1tp7dONv4jxTIRtF8HkJwELdlQ9eqfzyZenGYBm0BJ2meKjlmfUgtRWVb1f+73LZAMAZscZHGar5Pgdsw=="
+  "files_digest": "86fb0cb7a2697419c665ee68b49f8a2c6417af3cfaf33bfc10eff9d072e56de4",
+  "sig": "3iaCbfcClfpqwcHFQgdSK3h1wT3yqE1LmFzMNq+l+CqmaPj7q2CSmwdzZXNlriI8Q8HfqqfSOXTZeWfBpANYng=="
 }
