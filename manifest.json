@@ -708,15 +708,15 @@
     },
     {
       "path": "user_messages/english.lang",
-      "sha256": "3b29f9c3d9aa765b2a1c989ed70d314c451f00ce998ddc43e57bfcf63d895d8c",
-      "size": 34636
+      "sha256": "b7a842ef6e0d043f5744651f3e90e1a7d824232fc519cfdc2b4b0fb67f3439f3",
+      "size": 34820
     },
     {
       "path": "user_messages/polski.lang",
-      "sha256": "8e773431ecd53c7d72a2f06309753f1625aa09134a80adcdc6b1d027e9963d87",
-      "size": 36335
+      "sha256": "fc34740db30ebcaf008e78a2e3261e5ac0e68f9d9f5fadfc381c5dbb989958bd",
+      "size": 36517
     }
   ],
-  "files_digest": "86fb0cb7a2697419c665ee68b49f8a2c6417af3cfaf33bfc10eff9d072e56de4",
-  "sig": "3iaCbfcClfpqwcHFQgdSK3h1wT3yqE1LmFzMNq+l+CqmaPj7q2CSmwdzZXNlriI8Q8HfqqfSOXTZeWfBpANYng=="
+  "files_digest": "8e48ca1be97f74cd57f8f02fd4897a24a878abc53a058d18e8470dd819ba61a1",
+  "sig": "YmH9mY1PpfxDq11AbIk72hV+nDsklwwZG1npHKyG+vZtKucyminRL5iaPgpTCe867Vyif/MrW29cFgK8OZpSaA=="
 }
