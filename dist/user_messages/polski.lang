@@ -1,0 +1,1051 @@
+#lang PL
+# Plik językowy MyPuppyD — język polski (UTF-8, bez BOM)
+
+LOP_READY=MyPuppyD Lopper — silnik identyfikacji ECU gotowy.
+LOP_HINT1=Otwórz plik BIN, aby automatycznie rozpoznać typ sterownika,
+LOP_HINT2=wersje SW/HW oraz dostępne rozwiązania (DPF/EGR/DTC).
+LOP_FILE_LOADED=Wczytano:
+LOP_FILE_SIZE=Rozmiar:
+LOP_FILE_SIZE_B= B
+LOP_SCANNING=Skanowanie ECU...
+LOP_RESULT_HDR=--- WYNIK IDENTYFIKACJI ECU ---
+LOP_ECU_TYPE=Typ ECU   :
+LOP_SW=SW        :
+LOP_HW=HW        :
+LOP_BOSCH=Bosch     :
+LOP_SID=SID       :
+LOP_EV_ECM=EV_ECM    :
+LOP_MJD_IAW=MJD/IAW   :
+LOP_DTC=Obsługa DTC:
+LOP_DPF=Obsługa DPF:
+LOP_EGR=Obsługa EGR:
+LOP_YES=TAK
+LOP_NO=NIE
+LOP_BRANDS=Marki w binarce:
+LOP_DATES=Daty w binarce :
+LOP_UNKNOWN=Nierozpoznany sterownik.
+LOP_SOL_ON=WYŁĄCZONO
+LOP_SOL_OFF=WŁĄCZONO
+LOP_PATCH_NEED=Patch binarny wymaga pełnego modułu Lopper_ECU-TCU.
+LOP_SAVED=Zapisano:
+LOP_OPEN_ERR=Błąd: nie można otworzyć:
+SEC_SOLUTIONS=Rozwiązania
+SEC_SEARCH_DTC=Szukaj DTC
+SEC_DTC_CODES=Kody DTC
+DTC_COL_CODE=Kod
+DTC_COL_VALUE=Wartość
+DTC_COL_STATUS=Status
+DTC_COL_ADDR=Adres
+DTC_COL_DESC=Opis
+LOP_DTC_COLS_TITLE=Kolumny listy DTC
+LOP_DTC_COLS_HINT=Zaznacz widoczne kolumny; strzałkami ustaw kolejność:
+LOP_DTC_GROUP_BTN=DTC Grup
+LOP_DTC_GROUP_TITLE=Grupy DTC
+LOP_DTC_GROUP_HINT=Zaznacz grupy — lista pokaże kody należące do którejkolwiek z nich (dwuklik = tylko ta grupa):
+LOP_DTC_GROUP_CLEAR=Wyczyść
+DTC_GRP_EGR=EGR – recyrkulacja spalin
+DTC_GRP_DPF=DPF – filtr cząstek stałych
+DTC_GRP_FLAPS=Klapy (wirowe, dolotowe)
+DTC_GRP_MAF=MAF – przepływomierz powietrza
+DTC_GRP_LAMBDA=Sondy lambda
+DTC_GRP_ADBLUE=AdBlue / SCR / NOx
+DTC_GRP_CAT=Katalizator
+DTC_GRP_TURBO=Turbo / doładowanie
+DTC_GRP_GLOW=Świece żarowe
+DTC_GRP_INJ=Wtryskiwacze
+DTC_GRP_FUEL=Paliwo: ciśnienie, szyna, pompa
+DTC_GRP_THROTTLE=Przepustnica / pedał gazu
+DTC_GRP_CRANKCAM=Wał korbowy / rozrząd
+DTC_GRP_MISFIRE=Wypadanie zapłonów
+DTC_GRP_COOLING=Chłodzenie / temperatura
+DTC_GRP_SPEED=Prędkość pojazdu
+DTC_GRP_STARTSTOP=Start-Stop
+DTC_GRP_IMMO=Immobilizer (EWS / WFS)
+DTC_GRP_CAN=Komunikacja (CAN / LIN, kody U)
+DTC_GRP_ECU=Sterownik / zasilanie
+LOP_TERM_COPIED=Skopiowano
+LOP_TERM_COPY_NONE=Brak tekstu do skopiowania
+BTN_OPEN=Otwórz...
+BTN_SAVE=Zapisz jako...
+STAT_SCANNING=Skanowanie ECU...
+STAT_READY=Gotowy.
+STAT_LEARNING=Uczenie...
+STAT_LEARN_DONE=Uczenie zakończone.
+STAT_DETECTING=Detekcja...
+STAT_DETECT_DONE=Detekcja zakończona.
+STAT_PROCESSING=Przetwarzanie wyników...
+STAT_PHASE3=Faza 3: {n} / {max} wzorców...
+LOG_LEARNING=Uczenie:
+LOG_DETECTION=Detekcja:
+LOG_GPU_NA=GPU niedostępne:
+LOG_P3_GPU=Faza 3 GEMM: GPU
+LOG_P3_CPU=Faza 3 GEMM: CPU (GPU niedostępne)
+LOG_MAPS_APPENDED=Dopisano mapy z detekcji do projektu:
+LOG_MAPS_NEW_FILE=Utworzono nowy plik map projektu:
+ECU_LBL_NO_BIN=  ○ Brak pliku BIN
+ECU_LBL_SCANNING=  ◔ Skanowanie ECU...
+ECU_LBL_UNKNOWN=  ○ Nierozpoznany sterownik
+LBL_DONE_OK=Gotowe ✓
+LBL_DONE_ERR=Błąd ✗
+DET_ASK_TITLE=Detekcja map
+DET_ASK_MSG=Wykryto {n} map.\n\nTak — dopisz wykryte mapy do obecnego pliku map projektu\nNie — utwórz nowy plik map dla projektu\nAnuluj — pomiń
+STAT_UNKNOWN=Skanowanie: sterownik nierozpoznany.
+TAB_LEARN=Uczenie
+TAB_DETECT=Detekcja
+TAB_DB=Baza
+TAB_LOPPER=Lopper
+LBL_BIN_FILE=Plik BIN:
+LBL_CSV_FILE=Plik CSV:
+LBL_ECU_FAMILY=Rodzina ECU:
+LBL_MANUFACTURER=Producent:
+LBL_DATABASE=Baza danych:
+LBL_SAVE_CSV=Zapis CSV:
+LBL_FAMILY_FILTER=Filtr rodziny:
+LBL_VERSION=Wersja:
+CHK_SKIP_DUPL=Pomijaj duplikaty
+CHK_PHASE3=Faza 3 — fingerprint kontekstu
+BTN_LEARN_ACTION=▶  Ucz
+BTN_DETECT_ACTION=▶  Wykryj
+BTN_REFRESH_ACTION=Odśwież
+BTN_CLEAR_DB_ACTION=Wyczyść bazę…
+BTN_PREVIEW_ACTION=Podgląd
+
+# ════════════════════════════════════════════════════════════════
+# Sekcja: Lopper — komunikaty silnika (lopper_messages)
+# ════════════════════════════════════════════════════════════════
+
+# ── Analiza ──────────────────────────────────────────────────────
+LM_ANALYSIS_STARTED=Analizuję plik...
+
+# ── Identyfikacja ECU ─────────────────────────────────────────────
+LM_ECU_TYPE_DETECTED=Wykryto typ ECU: {ecu_name}
+
+# ── Dyspozytor: brak parsera / tablicy DTC ────────────────────────
+LM_DTC_NO_HANDLER=-> Dyspozytor DTC: brak metody dla {ecu_name}. Pomijam.
+LM_DPF_NO_HANDLER=-> Dyspozytor DPF: brak metody dla {ecu_name}. Pomijam.
+LM_EGR_NO_HANDLER=-> Dyspozytor EGR: brak metody dla {ecu_name}. Pomijam.
+LM_DTC_NOT_IN_FILE=-> Dyspozytor DTC: metoda istnieje, ale brak rozwiązania w pliku.
+LM_DPF_NOT_IN_FILE=-> Dyspozytor DPF: metoda istnieje, ale brak rozwiązania w pliku.
+LM_EGR_NOT_IN_FILE=-> Dyspozytor EGR: metoda istnieje, ale brak rozwiązania w pliku.
+LM_DTC_TABLE_NOT_FOUND=-> Solucja DTC: nie znaleziono tablicy błędów.
+LM_DTC_TBL_GENERIC=[DTC] {ecu_name}: nie znaleziono tablicy DTC
+LM_DTC_TBL_V2=[DTC] {ecu_name}: nie znaleziono tablicy DTC (v2)
+LM_DTC_TBL_EDC16=[DTC] {ecu_name}: nie znaleziono tablicy DTC (EDC16)
+LM_DTC_TBL_EDC15=[DTC] {ecu_name}: nie znaleziono tablicy DTC (EDC15)
+LM_DTC_TBL_MARELLI=[DTC] {ecu_name}: nie znaleziono tablicy DTC (Marelli)
+LM_DTC_TBL_EDC17BLK=[DTC] {ecu_name}: nie znaleziono tablicy DTC (EDC17 blok)
+LM_DTC_TBL_IAW=[DTC] {ecu_name}: nie znaleziono tablicy DTC (Marelli IAW)
+
+# ── DTC: wyniki skanowania ────────────────────────────────────────
+LM_DTC_FOUND=Znaleziono {count} unikalnych kodów DTC.
+LM_DTC_NOT_FOUND=Nie znaleziono aktywnych kodów DTC.
+
+# ── DTC: adresy i parametry mapy ─────────────────────────────────
+LM_DTC_MAP_PARAMS=Tablica DTC: rozmiar={count}, mapa1=0x{map1}, mapa2=0x{map2}, maska=0x{mask}
+LM_DTC_PATH_FOUND=Znaleziono ścieżkę DTC pod adresem 0x{address}
+LM_DTC_MASK_FOUND=Znaleziono maskę DTC pod adresem 0x{address}
+LM_DTC_ON_COUNT=Aktywnych DTC: {count}, rozmiar mapy: {map_size}
+LM_DTC_MAP_SIZE=Rozmiar mapy DTC: {count}
+
+# ── DTC: włącz / wyłącz ──────────────────────────────────────────
+LM_DTC_ALREADY_OFF=DTC {code} jest już wyłączony.
+LM_DTC_DISABLED_OK=DTC {code} wyłączony pomyślnie.
+LM_DTC_ALREADY_ON=DTC {code} jest już włączony.
+LM_DTC_ENABLED_OK=DTC {code} przywrócony pomyślnie.
+
+# ── DPF ──────────────────────────────────────────────────────────
+LM_DPF_SWITCH_FOUND=Przełącznik DPF znaleziony pod adresem 0x{address}
+LM_DPF_SWITCH_OFF=Przełącznik DPF [{label}] wyłączony pod adresem 0x{address}
+LM_DPF_SWITCH_OFF_SMP=Przełącznik DPF wyłączony
+LM_DPF_MAP_FOUND=Mapa DPF znaleziona pod adresem 0x{address}
+LM_DPF_CLEARING=Czyszczenie {size} bajtów mapy pod adresem 0x{address}
+LM_DPF_DINH_DELETED=Usunięto sekwencję DINH ({size} elementów)
+LM_DPF_NO_SWITCH=DPF [{label}]: wariant bez przełącznika
+
+# ── EGR ──────────────────────────────────────────────────────────
+LM_EGR_MAP_FOUND=Mapa EGR znaleziona pod adresem 0x{address}
+LM_EGR_ROWS=Mapa EGR: {rows} wierszy, adres 0x{address}
+LM_EGR_SWITCH_FOUND=Przełącznik EGR znaleziony pod adresem 0x{address}. Dezaktywacja...
+LM_EGR_HYSTERESIS=Mapa histerezy EGR znaleziona pod adresem 0x{address}. Czyszczenie...
+LM_EGR_MAP_OFF=Mapa EGR wyłączona pod adresem 0x{address} (oś X: {x_size})
+LM_EGR_CLEARING=Czyszczenie {size} bajtów mapy pod adresem 0x{address}
+LM_EGR_SWITCH_INT_OFF=Przełącznik EGR (int) wyłączony pod adresem 0x{address}
+LM_EGR_AXIS_FOUND=Oś X EGR znaleziona pod adresem 0x{address}, rozmiar: {size}
+LM_EGR_SIZE_EXCEEDED=OSTRZEŻENIE: Rozmiar mapy pod adresem 0x{address} przekracza granicę pliku
+
+# ── AdBlue ───────────────────────────────────────────────────────
+LM_ADBLUE_SW_FOUND=Znaleziono przełącznik AdBlue: {label}
+LM_ADBLUE_SW_OFF=Wyłączono przełącznik AdBlue: {label}
+LM_ADBLUE_VERSION=Wersja AdBlue: {version}
+LM_ADBLUE_MAP_OFF=Wyłączono mapę AdBlue: {label}
+LM_ADBLUE_RECOVERY_OFF=Wyłączono przełączniki odtwarzania DTC
+LM_ADBLUE_SUPP_OFF=Wyłączono przełącznik uzupełniający: {label}
+LM_ADBLUE_SPRINTER_OFF=Wyłączono AdBlue Sprinter: {label}
+LM_ADBLUE_DINH_OFF=Usunięto sekcję DINH: {size} elementów
+
+# ── MAF ──────────────────────────────────────────────────────────
+LM_MAF_MAP_FOUND=Znaleziono mapę MAF: {label}
+LM_MAF_MAP_OFF=Wyłączono mapę MAF: {label}
+
+# ── TVA ──────────────────────────────────────────────────────────
+LM_TVA_MAP_FOUND=Znaleziono mapę TVA
+LM_TVA_MAP_OFF=Wyłączono mapę TVA: {label}
+
+# ── Readiness ────────────────────────────────────────────────────
+LM_READINESS_FOUND=Znaleziono flagi gotowości OBD pod adresem 0x{address}
+LM_READINESS_OFF=Wyłączono flagi gotowości OBD pod adresem 0x{address}
+
+# ── Rozwiązania: zastosowanie / cofnięcie ─────────────────────────
+LM_SOL_APPLIED=Zastosowano rozwiązanie: {solution_name}
+LM_SOL_REVERTED=Cofnięto rozwiązanie: {solution_name}
+
+# ── Alerty bezpieczeństwa ─────────────────────────────────────────
+LM_ALERT_DISCONNECT=WTYCZKA {solution_name} MUSI ZOSTAĆ ODŁĄCZONA!
+LM_ALERT_ADBLUE_BOTH=MODUŁ ADBLUE I POMPA MUSZĄ ZOSTAĆ ODŁĄCZONE!
+LM_ALERT_ADBLUE_PUMP=POMPA ADBLUE MUSI ZOSTAĆ ODŁĄCZONA!
+LM_ALERT_ADBLUE_MODULE=MODUŁ ADBLUE MUSI ZOSTAĆ ODŁĄCZONY!
+LM_ALERT_NOX=CZUJNIKI NOX MOGĄ ZOSTAĆ ODŁĄCZONE!
+LM_ALERT_ADDITIVE=POMPA DODATKU (EOLYS) MUSI ZOSTAĆ ODŁĄCZONA!
+LM_ALERT_EGR=WTYCZKA EGR MUSI ZOSTAĆ ODŁĄCZONA!
+LM_ALERT_DPF_SENSORS=CZUJNIK RÓŻNICY CIŚNIEŃ I CZUJNIKI TEMPERATURY MOGĄ ZOSTAĆ ODŁĄCZONE!
+LM_ALERT_DPF_VAG_EDC16=CZUJNIK RÓŻNICY CIŚNIEŃ I CZUJNIK TEMPERATURY MUSZĄ ZOSTAĆ ODŁĄCZONE!
+LM_ALERT_DPF_VAG_DCM62=CZUJNIKI TEMPERATURY MUSZĄ ZOSTAĆ ODŁĄCZONE!
+LM_ALERT_DPF_MARELLI=CZUJNIK RÓŻNICY CIŚNIEŃ MUSI ZOSTAĆ ODŁĄCZONY!\nPRZED ZAPISEM PLIKU WYKONAJ WSZYSTKIE RESETY I WYMIANĘ OLEJU!
+
+# ════════════════════════════════════════════════════════════════
+# Sekcja: Menu popup (zębatka ⚙)
+# ════════════════════════════════════════════════════════════════
+MENU_INFO=Informacje
+MENU_LICENSE=Licencja
+MENU_SOLUTIONS=Rozwiązania...
+# ── Okno Informacje (\n = łamanie wiersza) ─────────────────────────────
+INFO_WND_TITLE=Informacje — MyPuppyD
+INFO_TAGLINE=Silnik identyfikacji i tuningu ECU
+INFO_SEC_ABOUT=O aplikacji
+INFO_ABOUT=MyPuppyD rozpoznaje sterownik na podstawie samego pliku BIN i wyszukuje w nim mapy — bez plików A2L i bez ręcznego szukania adresów.\nWzorce map trzymane są osobno dla każdej rodziny ECU, więc rozpoznawanie da się rozszerzać bez przebudowy programu.\nMapy otwierasz w widoku siatki, wykresu 2D albo 3D, edytujesz je i zapisujesz jako wersję projektu — z historią zmian i kontrolą sumy kontrolnej.\nZakładka Lopper dodaje gotowe rozwiązania serwisowe (DPF, EGR, DTC, AdBlue i inne) dla rozpoznanego sterownika.
+INFO_SEC_LIC=Licencja
+INFO_HWID=HWID:
+INFO_LIC_STATUS=Status licencji:
+INFO_VALID_UNTIL=Ważna do:
+INFO_DAYS=dni
+INFO_SEC_TUTORIAL=Szybki start
+INFO_BTN_PREV=◄ Wstecz
+INFO_BTN_NEXT=Dalej ►
+INFO_BTN_CLOSE=Zamknij
+INFO_SHORTCUT=Skrót klawiszowy:
+INFO_TUT1_TITLE=1. Główna — wczytaj plik
+INFO_TUT1_TEXT=„Importuj" wczytuje plik BIN i zakłada dla niego projekt; „Eksportuj" zapisuje bieżącą wersję.\nLista wersji projektu pozwala wrócić do każdego zapisanego stanu — „Zmień nazwę" i „Opis wersji" opisują je po swojemu.
+INFO_TUT1_M1=Importuj / Eksportuj plik BIN
+INFO_TUT1_M2=Ostatnio otwierane projekty — dwuklik otwiera
+INFO_TUT1_M3=Historia modyfikacji bieżącej wersji
+INFO_TUT2_TITLE=2. Mapy — przeglądaj i edytuj
+INFO_TUT2_TEXT=Wybierz mapę z listy po lewej. Lista „Widok" przełącza siatkę, wykres 2D i 3D; „Obróć widok" obraca siatkę.\nPPM na siatce otwiera menu edycji, Ctrl+klik zaznacza wiele komórek — pełna lista skrótów edytora jest pod zębatką → „Obsługiwane".
+INFO_TUT2_M1=Tryb podglądu: siatka / wykres / 3D
+INFO_TUT2_M2=Lista wykrytych map
+INFO_TUT2_M3=Opcje: typ danych, podświetlanie zmian, widok listowy
+INFO_TUT3_TITLE=3. Uczenie / Detekcja
+INFO_TUT3_TEXT=„Detekcja" szuka map w pliku, „Uczenie" dokłada nowe wzorce z pary plik+CSV, „Baza" pokazuje zawartość bazy wzorców.\nWskaż plik BIN przyciskiem „…" po prawej i naciśnij „Wykryj" — postęp i wynik lecą do terminala na dole.
+INFO_TUT3_M1=Tryb: Detekcja / Uczenie / Baza
+INFO_TUT3_M2=Wskaż plik BIN przyciskiem „…"
+INFO_TUT3_M3=„Wykryj" uruchamia detekcję
+INFO_TUT4_TITLE=4. Lopper — rozwiązania
+INFO_TUT4_TEXT=Lopper rozpoznaje sterownik z wczytanego pliku i włącza przełączniki tych rozwiązań, które są dla niego dostępne.\nPełną macierz obsługiwanych sterowników — razem z kolumną „Map scaner" — znajdziesz pod zębatką w menu „Rozwiązania...".
+INFO_TUT4_M1=Wybór marki i modelu pojazdu
+INFO_TUT4_M2=Rozwiązania dostępne dla sterownika
+INFO_TUT4_M3=Odczytane kody DTC
+
+# ════════════════════════════════════════════════════════════════
+# Sekcja: Okno Rozwiązań (Solutions)
+# ════════════════════════════════════════════════════════════════
+SOL_WND_TITLE=Rozwiązania Lopper
+SOL_LBL_BRAND=Marka:
+SOL_LBL_MODEL=Model:
+SOL_BTN_CLEAR=Wyczyść
+SOL_BTN_PDF=PDF
+SOL_BTN_JSON=JSON
+SOL_ALL=Wszystkie
+SOL_FILTER_LBL=Filtr:
+SOL_ALL_BRANDS=Wszystkie marki
+SOL_ALL_MODELS=Wszystkie modele
+SOL_TOTAL_LBL=Łącznie:
+SOL_PAGE_LBL=Strona
+
+# ════════════════════════════════════════════════════════════════
+# Sekcja: Wskaźnik sum kontrolnych (Checksum)
+# ════════════════════════════════════════════════════════════════
+CS_STATE_NONE=Brak Rozwiązania
+CS_STATE_CHECKING=Sprawdzanie...
+CS_STATE_BAD=Sumy błędne
+CS_STATE_GOOD=Sumy OK
+CS_ASK_FIX=Sumy kontrolne są błędne. Naprawić przed zapisem?
+CS_DLL_FALLBACK=Wspomaganie DLL:
+
+# ════════════════════════════════════════════════════════════════
+# Sekcja: Zakładka Mapy (Map Viewer)
+# ════════════════════════════════════════════════════════════════
+TAB_MAPS=Mapy
+MV_MAP_LIST=Lista Map
+MV_LIST_FULL=Lista map pełnej wysokości
+MV_LIST_SHORT=Lista map skrócona
+MV_SORT_NAME=Az
+MV_SORT_SIZE=XY
+MV_COL_NAME=Nazwa
+MV_COL_ADDR=Adres
+MV_COL_SIZE=Rozmiar
+MV_SEARCH_CUE_NAME=Szukaj po nazwie… (PPM — zakres)
+MV_SEARCH_CUE_SIZE=Szukaj po rozmiarze, np. 16x8… (PPM — zakres)
+MV_SEARCH_CUE_ADDR=Szukaj po adresie (hex)… (PPM — zakres)
+MV_SORT_ASC=Rosnąco
+MV_SORT_DESC=Malejąco
+MV_FIRST_CHOICE=Pierw. wybór
+MV_TRANSLATE=Tłumacz
+MV_OPEN_MAP=Otwórz mapę...
+MV_OPEN_BIN=Otwórz .bin...
+MV_SAVE_CHANGES=Zapisz zmiany
+MV_LOAD_CHANGES=Wczytaj zmiany
+MV_EXPORT_BIN=Eksportuj .bin
+MV_GRID_2D=Siatka (2D)
+MV_CHART_2D=Wykres (2D)
+MV_VIEW_3D=3D
+MV_ROTATE_VIEW=Obróć widok
+MV_CORRECTOR=Wartość edycji [+ -]:
+MV_GRID_ZOOM=Zoom siatki
+MV_SET_VALUE=Wstaw wartość
+MV_ADD_PCT=Dodaj %
+MV_GRADIENT_EDIT=Edycja gradientowa
+MV_GRAD_RMB_HINT=Prawy przycisk myszy: aktywne / interpolowane
+MV_MULTIPLIER=Mnożnik:
+MV_CONSTANT=Stała:
+MV_UNIT=Jednostka:
+MV_MAP_DATA=Mapa
+MV_SELECT_MAP=Wybierz mapę z listy
+MV_UNSIGNED=Bez znaku
+MV_RANGE=Zakres
+MV_PADDING=Odstęp
+MV_FOLDER_MY_MAPS=Moje Mapy
+MV_FOLDER_UNCAT=Mapy bez przypisania
+MV_FOLDER_FIRST_CHOICE=Pierwszego wyboru
+MV_UNSAVED=● Niezapisane zmiany
+MV_AXIS_X=Oś X
+MV_AXIS_Y=Oś Y
+MV_VALUE=Wartość
+MV_KEYBOARD_HINT=Użyj + / -
+MV_DEFAULT_LAY=Domyślne
+MV_HIGHLIGHT_CHG=Podświetl zmiany
+MV_FILE_OPTS=Opcje ▾
+MV_AUTO_TYPE=Auto typ
+MV_LIST_VIEW=Listowy
+MV_ROWS=Wierszy
+MV_FMT_DECODED=Przeliczona
+MV_FMT_HEX=Hex
+MV_FMT_ASCII=ASCII
+MV_FMT_BINARY=Binarna
+
+# ════════════════════════════════════════════════════════════════
+# Sekcja: Zakładka Pliki
+# ════════════════════════════════════════════════════════════════
+DB_COL_BRAND=Marka pojazdu
+DB_COL_ECUPROD=Prod. ECU
+DB_COL_FAMILY=Rodzina ECU
+DB_COL_TOTAL=Łącznie
+DB_COL_OTHER=Inne
+TAB_FILES=Główna
+F_SEC_OPS=Operacje na pliku
+F_BTN_MAP=Pliki Map
+F_BTN_OPEN=Otwórz BIN...
+F_BTN_SAVE=Zapisz jako...
+F_BTN_IMPORT=Importuj
+F_BTN_EXPORT=Eksportuj
+F_IMP_TITLE=Importuj
+F_IMP_HEX=Otwórz plik hexdump
+F_IMP_MAP=Importuj plik map do projektu
+F_IMP_PRJ=Importuj projekt
+F_EXP_TITLE=Eksportuj
+F_EXP_HEX=Zapisz hexdump
+F_EXP_MAP=Eksportuj otwarty plik map
+F_EXP_PRJ=Eksportuj projekt do...
+F_EXP_HEXFMT=Eksportuj do Intel HEX / Motorola...
+F_SEC_RECENT=Ostatnio otwierane
+F_COL_FILE=Plik
+F_COL_DATE=Data otwarcia
+F_COL_OPENS=Otwarcia
+F_COL_MODS=Modyfikacje
+F_SEC_HIST=Historia modyfikacji
+F_COL_NR=Nr
+F_COL_TYPE=Typ
+F_COL_BYTES=Bajty
+F_COL_DATETIME=Czas i Data
+F_BTN_UNDO=Cofnij ostatnią
+
+# ════════════════════════════════════════════════════════════════
+# Sekcja: Wersje projektu, kolumny, dialogi
+# ════════════════════════════════════════════════════════════════
+F_SEC_VER=Wersje projektu
+F_BTN_NEW_VER=Nowa wersja
+F_BTN_DEL_VER=Usuń wersję
+F_BTN_RENAME=Zmień nazwę
+F_BTN_DESC=Opis wersji
+F_COL_PROJECT=Projekt
+F_COL_CS=CS
+F_COL_MAP_FILE=Plik map
+F_RENAME_TITLE=Zmień nazwę wersji
+F_RENAME_PROMPT=Nowa nazwa:
+F_DESC_PROMPT=Opis:
+
+# ════════════════════════════════════════════════════════════════
+# Sekcja: Właściwości projektu
+# ════════════════════════════════════════════════════════════════
+PROJ_WND_TITLE=Właściwości projektu
+PROJ_LBL_NAME=Nazwa projektu:
+PROJ_LBL_REG=Rejestracja:
+PROJ_LBL_ENG=Kod silnika:
+PROJ_LBL_OWN=Właściciel:
+PROJ_LBL_NOTE=Opis dodatkowy:
+PROJ_GRP_ECU=ECU (z analizy)
+PROJ_LBL_ECU_TYPE=Typ ECU:
+PROJ_LBL_ECU_SW=Wersja SW:
+PROJ_LBL_ECU_HW=Numer HW:
+
+# ════════════════════════════════════════════════════════════════
+# Sekcja: Map Viewer — historia mapy
+# ════════════════════════════════════════════════════════════════
+MV_HIST_MAP=Historia mapy
+MV_DEFAULT_FROM_PROJ=Domyślna z projektu
+MV_GEAR_OBSLUGA=Obsługa
+MV_OBSLUGA_TITLE=Obsługa – skróty i funkcje
+MV_OBSLUGA_SEC_KEYS=Skróty klawiszowe edytora:
+MV_OBSLUGA_KEY_ADD=Dodaj korektę:
+MV_OBSLUGA_KEY_SUB=Odejmij korektę:
+MV_OBSLUGA_KEY_REM=Usuń zmianę:
+MV_OBSLUGA_KEY_CLR=Wyczyść zaznaczenie:
+MV_OBSLUGA_SEC_HIDDEN=Funkcje ukryte:
+MV_OBSLUGA_HIDDEN_TXT=PPM na siatce → menu kontekstowe edycji\nCtrl+klik na komórkę → wielozaznaczenie\nPrzeciągnij granicę kolumny/wiersza nagłówka → zmiana rozmiaru\nKółko myszy na wartości w edytorze → zmiana o krok
+
+# ════════════════════════════════════════════════════════════════
+# Sekcja: Ustawienia — nawigacja i panel 0 (Ogólne)
+# ════════════════════════════════════════════════════════════════
+SETT_WND_TITLE=Ustawienia
+SETT_NAV_GENERAL=Ogólne
+SETT_NAV_FILES=Pliki
+SETT_NAV_MAPS=Mapy
+SETT_NAV_DETECT=Uczenie/Detekcja
+SETT_NAV_SUPPORT=Detekcja
+SETT_NAV_LOPPER=Lopper
+SETT_NAV_LEGAL=Zgody
+SETT_P0_PATHS=Ścieżki
+SETT_P0_DB_PATH=Plik summary.db:
+SETT_P0_PROJ_PATH=Folder projektów:
+SETT_P0_HOTKEYS=Skróty klawiszowe zakładek  (Ctrl + ...)
+
+# ════════════════════════════════════════════════════════════════
+# Sekcja: Ustawienia — panel 1 (Pliki)
+# ════════════════════════════════════════════════════════════════
+SETT_P1_CS_HDR=Suma kontrolna
+SETT_P1_AUTO_CS=Automatycznie oblicz sumę kontrolną po załadowaniu pliku
+SETT_P1_SAVE_HDR=Zapis
+SETT_P1_BACKUP=Automatyczny backup przed zapisem (plik.bin.bak)
+SETT_P1_PROJ_HDR=Projekt i historia
+SETT_P1_AUTOSAVE=Auto-zapis projektu co (min, 0=wył.):
+SETT_P1_HISTWIN=Okno historii zmian (min):
+SETT_P1_SAVE_DELAY=Opóźnienie zapisu zmian mapy (sek):
+SETT_P1_RCOLS=Kolumny listy ostatnich plików
+SETT_P1_COL0=Projekt
+SETT_P1_COL1=Plik (ścieżka)
+SETT_P1_COL2=Data otwarcia
+SETT_P1_COL3=Otwarcia
+SETT_P1_COL4=Modyfikacje
+SETT_P1_COL5=CS
+SETT_P1_COL6=Plik map
+
+# ════════════════════════════════════════════════════════════════
+# Sekcja: Ustawienia — panel 2 (Mapy)
+# ════════════════════════════════════════════════════════════════
+SETT_P2_GRID_HDR=Wyświetlanie siatki
+SETT_P2_FONT=Czcionka siatki (pt):
+SETT_P2_FILL=Szerokość kafelki:
+SETT_P2_TREE_ZOOM=Zoom listy map (pt):
+SETT_P2_KEYS_HDR=Skróty klawiszowe edytora map
+SETT_P2_KEY0=Dodaj korektor:
+SETT_P2_KEY1=Odejmij korektor:
+SETT_P2_KEY2=Przywróć komórkę:
+SETT_P2_KEY3=Usuń zaznaczenie:
+SETT_P2_ALT0=(Num+ zawsze)
+SETT_P2_ALT1=(Num- zawsze)
+SETT_P2_ALT2=(Backspace też)
+SETT_P2_ALT3=(Esc zawsze)
+
+# ════════════════════════════════════════════════════════════════
+# Sekcja: Ustawienia — panel 3/4/5
+# ════════════════════════════════════════════════════════════════
+SETT_P3_PROC_HDR=Przetwarzanie
+SETT_P3_THREADS=Wątki CPU (0 = auto):
+SETT_P3_THRESH=Próg dopasowania (0.00 = auto):
+SETT_P4_SOON=(opcje Loppera - wkrótce)
+SETT_P5_HDR=Zgody i warunki użytkowania
+SETT_P5_DIAG_NOTE=Po zaznaczeniu aplikacja przy eksporcie pliku (BIN/HEX/S19) wysyła autorowi plik projektu (.prj) w archiwum ZIP oraz opis użytych własnych rozwiązań — bez ścieżek z Twojego komputera. Pełna informacja (co dokładnie, dokąd, na jakiej podstawie) jest w oknie „Warunki korzystania” przy starcie.\nZgodę możesz wycofać w każdej chwili: odznacz pole i zapisz — od tej chwili nic nie jest wysyłane. Wycofanie nie ogranicza działania aplikacji.
+
+# ════════════════════════════════════════════════════════════════
+# Sekcja: Ustawienia — wspólne przyciski
+# ════════════════════════════════════════════════════════════════
+SETT_BTN_COLORS=Kolory i znaczniki...
+SETT_BTN_DEFAULTS=Przywróć domyślne
+
+# ════════════════════════════════════════════════════════════════
+# Sekcja: Kolory — okna i etykiety
+# ════════════════════════════════════════════════════════════════
+CLR_WND_0=Kolory — Ogólne
+CLR_WND_1=Kolory — Pliki
+CLR_WND_2=Kolory i znaczniki — Mapy
+CLR_WND_3=Kolory — Uczenie/Detekcja
+CLR_WND_4=Kolory — Lopper
+CLR_WND_5=Kolory — Zgody
+CLR_COM_HDR=Kolory wspólne
+CLR_LBL_BG=Tło:
+CLR_LBL_FG=Tekst:
+CLR_LBL_ACCENT=Akcent:
+CLR_LBL_PANEL=Panel:
+CLR_LBL_INPUT=Pole wpisywania:
+CLR_LBL_BTN=Przycisk:
+CLR_FILES_HDR=Pliki
+CLR_LBL_ACTIVE_PRJ=Ramka aktywnego projektu:
+CLR_GRAD_HDR=Gradient danych   (min → środek → max)
+CLR_GRAD_LOW=Niski (min):
+CLR_GRAD_MID=Środkowy:
+CLR_GRAD_HIGH=Wysoki (max):
+CLR_AXIS_HDR=Gradient osi   (niski → wysoki)
+CLR_AXIS_LOW=Niski:
+CLR_AXIS_HIGH=Wysoki:
+CLR_GRID_HDR=Kolory siatki
+CLR_LBL_SEL=Selekcja (fokus):
+CLR_LBL_MSEL=Multi-selekcja:
+CLR_LBL_CHANGE=Komórka edytowana:
+CLR_LBL_TREE_SEL=Tło zaznaczenia listy map:
+CLR_LBL_TREE_SEL_TXT=Tekst zaznaczenia listy map:
+CLR_MARK_HDR=Styl znacznika edytowanej komórki
+CLR_MARK_DOT=Kropka (róg komórki)
+CLR_MARK_BORDER=Obramowanie komórki
+CLR_MARK_BG=Tło komórki (odcień)
+CLR_LOP_HDR=Kolory Loppera
+CLR_LBL_LOP_RESULT=Wynik:
+CLR_EMPTY=(brak opcji kolorów dla tej zakładki)
+CLR_VAL_GRAD_HDR=Gradient wartości (edytor)
+CLR_VAL_GRAD_CHK=Kolorowanie komórek gradientem
+CLR_VAL_GRAD_BTN=Edytuj gradient wartości...
+CLR_CHART_HDR=Gradient kolorów wykresu 2D
+CLR_CHART_START=Kolor wiersza pierwszego:
+CLR_CHART_END=Kolor wiersza ostatniego:
+CLR_FILE_MAP_HL=Podświetlenie wybranej mapy:
+
+# ════════════════════════════════════════════════════════════════
+# Sekcja: Dialog klawisza i wspólne przyciski
+# ════════════════════════════════════════════════════════════════
+CAPKEY_TITLE=Skrót klawiszowy
+CAPKEY_HINT=Naciśnij klawisz...
+CAPKEY_CANCEL=Anuluj
+BTN_OK=OK
+BTN_CANCEL=Anuluj
+BTN_CLOSE=Zamknij
+BTN_EDIT=Edytuj
+BTN_SAVE=Zapisz
+F_ACT_DELETE_PROJ=Usuń projekt
+F_MB_DEL_PROJ_MSG=Czy na pewno chcesz usunąć ten projekt z listy?
+F_MB_DEL_PROJ_TITLE=Usuń projekt
+F_MB_ARCHIVE_MSG=Czy zarchiwizować plik projektu (.prj)?
+F_MB_ARCHIVE_TITLE=Archiwizacja projektu
+
+# ════════════════════════════════════════════════════════════════
+# Sekcja: Drzewo map — folder edytowanych
+# ════════════════════════════════════════════════════════════════
+MV_EDITED_FOLDER=Edytowane
+MV_ADD_EDITED=Dodaj do edytowanych
+MV_REM_EDITED=Usuń z edytowanych
+MV_RENAME_MAP=Zmień nazwę mapy
+MV_DELETE_MAP=Usuń mapę
+MV_RENAME_FOLDER=Zmień nazwę folderu
+MV_NEW_FOLDER=Nowy folder…
+MV_DELETE_FOLDER=Usuń folder
+MV_DELETE_FOLDER_CONFIRM_A=Usunąć folder „
+MV_DELETE_FOLDER_CONFIRM_B=”? Mapy z niego trafią do „Mapy bez przypisania”.
+MV_COLLAPSE_ALL=Zwiń wszystkie foldery
+MV_EXPAND_ALL=Rozwiń wszystkie foldery
+MV_MOVE_TO_FOLDER=Przenieś do folderu
+MV_NEW_FOLDER_TITLE=Nowy folder
+MV_MOVE_DLG_HINT=Wpisz, aby filtrować listę — albo podaj nową nazwę, a folder powstanie:
+MV_MOVE_DLG_BTN=Przenieś
+MV_DELETE_MAP_CONFIRM_A=Usunąć mapę „
+MV_DELETE_MAP_CONFIRM_B=” z projektu?\nTej operacji nie można cofnąć.
+STAT_SOLUTIONS_AVAIL=rozwiązania dostępne
+MV_RENAME_TITLE=Zmień nazwę
+MV_RENAME_LABEL=Nowa nazwa:
+F_MAP_FILES_TITLE=Pliki map
+F_MAP_FILES_MENU=Pliki map...
+F_MAP_FILES_RENAME=Zmień nazwę wybranego
+F_MAP_FILES_DELETE=Usuń wybrany
+F_MAP_FILES_NEW=Stwórz nowy
+MV_FROM_DET=Z detekcji
+MV_FROM_LEARN=Z uczenia
+MV_FROM_BOTH=Oba
+MV_VIEW_LBL=Widok siatki:
+
+# ════════════════════════════════════════════════════════════════
+# Sekcja: Dialog historii mapy
+# ════════════════════════════════════════════════════════════════
+HIST_COL_TIME=Czas i data
+HIST_COL_MAP=Mapa
+HIST_COL_CHANGES=Zmian
+HIST_COL_DESC=Opis
+HIST_CHNG_ADDR=Kordynaty
+HIST_CHNG_BEFORE=Przed
+HIST_CHNG_AFTER=Po
+HIST_DESC_LBL=Opis wybranego wpisu:
+HIST_BTN_SAVE_DESC=Zapisz opis
+HIST_BTN_RESTORE=Przywróć do tego momentu
+HIST_BTN_DELETE=Usuń wpis
+HIST_BTN_UNDO_CHG=Cofnij zmianę
+HIST_MB_DEL_MSG=Usunąć wybrany wpis historii?
+HIST_MB_DEL_TITLE=Usuń wpis
+F_ACT_REVERT=Wycofaj zmianę
+F_ACT_REMOVE_REV=Usuń i wycofaj
+F_ACT_RESTORE=Przywróć
+
+# ════════════════════════════════════════════════════════════════
+# Sekcja: Dialog właściwości mapy
+# ════════════════════════════════════════════════════════════════
+MV_EDIT_PROPS=Edytuj właściwości mapy
+MV_CREATE_MAP=Utwórz mapę
+MV_PROPS_TITLE=Właściwości:
+MV_PROPS_TAB_MAP=Mapa
+MV_PROPS_TAB_AXISX=Oś X
+MV_PROPS_TAB_AXISY=Oś Y
+MV_PROPS_NAME=Nazwa
+MV_PROPS_FOLDER=Folder
+MV_PROPS_ADDR=Adres (hex)
+MV_PROPS_DTYPE=Typ danych
+MV_PROPS_MULT=Mnożnik
+MV_PROPS_CONST=Stała
+MV_PROPS_PREC=Dokładność
+MV_PROPS_UNIT=Jednostka
+MV_PROPS_MAPTYPE=Typ mapy
+MV_PROPS_SIZEX=Rozmiar X
+MV_PROPS_SIZEY=Rozmiar Y
+MV_PROPS_SKIPLN=Pomiń bajt/linię
+MV_PROPS_SKIP=Pomiń bajt
+
+MV_PROPS_SAVE=Zapisz
+MV_PROPS_CONFIRM_MSG=Czy na pewno zapisać zmiany właściwości mapy?
+MV_PROPS_CONFIRM_TITLE=Potwierdź zapis
+
+F_NEWVER_HEADER=Podstawa nowej wersji
+F_NEWVER_FROM_START=Z pliku startowego
+F_NEWVER_FROM_CURR=Z bieżącej wersji
+
+# ── Kategorie map (kanoniczne kody z detection_3-4/map_categories.h) ──────────
+# Klucz = MAPCAT_ + kod kanoniczny. Kodow (lewa strona) NIE zmieniamy — sa
+# wspolnym oznaczeniem mapy dla heurystyki i bazy wzorcow. Zmiana tekstu tutaj
+# nie wymaga rekompilacji.
+# Slowa, z ktorych core_1/engine.h sklada nazwe mapy znalezionej heurystycznie
+# (prefiks MAPCAT_, bo silnik czyta z .lang wylacznie te klucze — patrz
+# map_categories.h::lang_load).
+# ── Raport detekcji (detection_3-4/reporter.cpp) ─────────────────────────────
+# Prefiks DETRPT_, bo silnik detekcji czyta z .lang tylko klucze MAPCAT_/DETRPT_
+# (patrz map_categories.h::lang_load). Kolumna z dwukropkiem wyrownuje sie sama.
+DETRPT_TITLE=Raport detekcji:
+DETRPT_FALLBACK=Fallback
+DETRPT_FB_A2L=A2L producenta (adresy wprost)
+DETRPT_FB_PPC=PowerPC: tablice wskaznikow (pelny zrzut)
+DETRPT_FB_TWIN=bliźniacze rodziny
+DETRPT_FB_ALL=WSZYSTKIE rodziny (brak dopasowania!)
+DETRPT_FB_NONE=brak wzorców w bazie
+DETRPT_FB_KEYS=klucze marki:
+DETRPT_FB_MANUF=producent:
+DETRPT_PATTERNS=Wzorców w bazie
+DETRPT_MATCHED=Dopasowanych
+DETRPT_M_EXACT=exact match
+DETRPT_M_NEAR=prawie (edyt)
+DETRPT_M_AXIS=axis-first
+DETRPT_M_ANCHOR=z kotwic
+DETRPT_M_WINDOWED=windowed
+DETRPT_M_GLOBAL=global
+DETRPT_M_CONTEXT=context
+DETRPT_M_HEUR=heurystyka
+DETRPT_M_RECORD=rekord ECU
+DETRPT_M_PPC=wskaznik PPC
+DETRPT_NOT_FOUND=Nie znaleziono
+DETRPT_SCALARS=Skalary (Faza 3)
+DETRPT_HW=Sprzet:
+DETRPT_HW_CORES=rdzeni
+DETRPT_HW_RAM_FREE=MB wolne
+DETRPT_HW_DEBUG=[!] BUILD BEZ OPTYMALIZACJI — detekcja bedzie WIELOKROTNIE wolniejsza, do pracy uzyj wersji Release
+
+MAPCAT_UI_MAP=Mapa
+MAPCAT_UI_CURVE=Krzywa
+MAPCAT_UI_POINTS=pkt
+MAPCAT_UI_AXIS=oś
+MAPCAT_UI_VALUES=wart.
+# Ogony z rozróżnieniem doklejane przy nauce
+# — wartości PL MUSZĄ być identyczne z tamtą listą, po nich silnik rozpoznaje frazę.
+MAPCAT_TAIL_MAIN_INJ=wtrysk główny
+MAPCAT_TAIL_PILOT_INJ=dotrysk
+MAPCAT_TAIL_START=rozruch
+MAPCAT_TAIL_IDLE=bieg jałowy
+MAPCAT_TAIL_FULL_LOAD=pełne obciążenie
+MAPCAT_TAIL_LOW_RANGE=reduktor
+MAPCAT_TAIL_BY_ENG_TEMP=wg temp. silnika
+MAPCAT_TAIL_BY_AIR_TEMP=wg temp. powietrza
+MAPCAT_TAIL_BY_FUEL_TEMP=wg temp. paliwa
+MAPCAT_TAIL_BY_ATM_PRESS=wg ciśn. atm.
+MAPCAT_TAIL_BY_VOLTAGE=wg napięcia
+MAPCAT_TAIL_BASE=podstawowa
+MAPCAT_TAIL_CORRECTION=korekta
+MAPCAT_TAIL_WEIGHTING=waga
+MAPCAT_TAIL_MINIMUM=minimum
+MAPCAT_TAIL_MAXIMUM=maksimum
+MAPCAT_TAIL_EARLIEST=najwcześniejsza
+MAPCAT_TAIL_DYNAMIC=dynamiczna
+MAPCAT_TAIL_CONTROL=sterowanie
+MAPCAT_TAIL_ADAPTATION=adaptacja
+MAPCAT_TAIL_BY_AMB_PRESS=wg ciśn. otocz.
+MAPCAT_TAIL_BY_GEAR=wg biegu
+MAPCAT_TAIL_THRESHOLD=próg
+MAPCAT_TAIL_LIMIT=limit
+MAPCAT_TAIL_OBD=OBD
+MAPCAT_TAIL_DIAGNOSTICS=diagnostyka
+MAPCAT_TAIL_PREDICTION=predykcja
+MAPCAT_TAIL_FACTOR=współczynnik
+MAPCAT_TAIL_SETPOINT=zadane
+MAPCAT_TAIL_BY_RPM=wg obrotów
+MAPCAT_TAIL_BY_AIR_MASS=wg masy powietrza
+# Foldery nadawane przez detekcję — wartości PL identyczne z literałami w kodzie
+# (engine.h, default_matcher.cpp, map_categories.h, ppc_scanner.h).
+MAPCAT_FOLDER_RECOGNIZED=Rozpoznane
+MAPCAT_FOLDER_LIMITERS=Ograniczniki
+MAPCAT_FOLDER_COEFFICIENTS=Wspolczynniki
+MAPCAT_FOLDER_POTENTIAL=Potencjalna mapa
+MAPCAT_FOLDER_RELATED_ECU=Pokrewne ECU
+MAPCAT_FOLDER_PPC=PowerPC (wskazniki)
+MAPCAT_UI_EDITED=(edytowana?)
+MAPCAT_UI_BY=po
+MAPCAT_UI_AXIS_RPM=obroty
+MAPCAT_UI_AXIS_QTY=dawka
+MAPCAT_TORQUE_LIMITER=Ogranicznik momentu
+MAPCAT_TORQUE_LIMITER_GEAR=Ogranicznik momentu (bieg)
+MAPCAT_TORQUE_LIMITER_LIMP=Ogranicznik awaryjny
+MAPCAT_SMOKE_LIMITER=Ogranicznik dymu
+MAPCAT_IQ_LIMITER=Ogranicznik dawki
+MAPCAT_IQ_TO_TORQUE=Konwersja dawka-moment
+MAPCAT_IQ_LIMIT_FUEL_TEMP=Limit dawki od temp. paliwa
+MAPCAT_INJ_QUANTITY=Dawka wtrysku
+MAPCAT_INJ_DURATION=Czas wtrysku
+MAPCAT_SOI=Kąt wtrysku (SOI)
+MAPCAT_RAIL_PRESSURE=Ciśnienie rail (zadane)
+MAPCAT_RAIL_LIMIT=Ogranicznik rail
+MAPCAT_RAIL_LIMIT_TEMP=Limit rail od temperatury
+MAPCAT_RAIL_SENSOR=Czujnik rail (linearyzacja)
+MAPCAT_BOOST_TARGET=Doładowanie (zadane)
+MAPCAT_BOOST_LIMIT=Ogranicznik doładowania
+MAPCAT_N75_VNT=Nastawnik doładowania (N75/VNT)
+MAPCAT_MAF_TARGET=Masa powietrza (zadana)
+MAPCAT_MAF_SENSOR=Masa powietrza (czujnik)
+MAPCAT_MAP_SENSOR=Czujnik MAP (linearyzacja)
+MAPCAT_EGR=EGR (zadane)
+MAPCAT_EGR_HYSTERESIS=Histereza EGR
+MAPCAT_LAMBDA=Lambda (obliczenia)
+MAPCAT_DRIVER_WISH=Życzenie kierowcy
+MAPCAT_DPF_SWITCH=Przełącznik DPF
+MAPCAT_SV_LIMITER=Limiter serwisowy (SV)
+MAPCAT_SPEED_LIMITER=Ogranicznik prędkości
+MAPCAT_RPM_LIMITER=Ogranicznik obrotów
+MAPCAT_IGNITION=Kąt zapłonu
+MAPCAT_INJ_GASOLINE=Wtrysk benzyny
+MAPCAT_LOAD_TARGET=Ładunek (zadany)
+MAPCAT_LAMBDA_TARGET=Lambda (zadana)
+MAPCAT_THROTTLE=Przepustnica
+MAPCAT_KNOCK=Spalanie stukowe
+MAPCAT_VVT_CAM=Faza rozrządu (VVT)
+MAPCAT_WASTEGATE=Wastegate
+MAPCAT_TEMP_CORRECTION=Korekta temperaturowa
+MAPCAT_VOLTAGE=Charakterystyka napięciowa
+MAPCAT_COEFFICIENT=Współczynnik korekcyjny
+MAPCAT_UNKNOWN=Mapa
+HEXIMP_TITLE_NOTICE=Import Intel HEX / Motorola
+HEXIMP_DETECTED_INTEL=Rozpoznano format pliku: Intel HEX
+HEXIMP_DETECTED_MOTOROLA=Rozpoznano format pliku: Motorola S-Record
+HEXIMP_RANGE_INFO=Zakres adresów w pliku:
+HEXIMP_PRIMARY_RANGE_INFO=Główne dane w zakresie:
+HEXIMP_AUTO_UNPACK=Plik zostanie rozpakowany do standardowego rozmiaru kości pamięci:
+HEXIMP_BTN_SIZE=Rozmiar...
+HEXIMP_SIZE_TITLE=Parametr importu Intel/Motorola
+HEXIMP_SIZE_LIST_HDR=Rozmiar pliku
+HEXIMP_ADDR_RANGE_GRP=Zakres adresów:
+HEXIMP_ADDR_RANGE_TXT=Plik zawiera dane dla następującego zakresu adresowego:
+HEXIMP_OFFSET_LBL=Wybierz przesunięcie:
+HEXIMP_OFFSET_HEX=(hex)
+HEXIMP_RESULT_RANGE_TXT=Spowoduje to utworzenie tego zakresu:
+HEXIMP_MANUAL_SIZE_LBL=Lub wybierz rozmiar ręcznie:
+HEXIMP_MORE_INFO_BTN=Więcej informacji...
+HEXIMP_MORE_INFO_TITLE=Import Intel HEX / Motorola — informacje
+HEXIMP_MORE_INFO_TEXT=Plik tekstowy Intel HEX lub Motorola S-Record koduje zawartość pamięci ECU jako ciąg rekordów adres+dane z sumami kontrolnymi.\nKażda linia jest weryfikowana - przy jakimkolwiek błędzie import zostaje odrzucony.\n\nPrzesunięcie (offset) jest odejmowane od adresu każdego rekordu przed zapisem do bufora wynikowego - pozwala to dopasować dane pliku do początku wybranej kości pamięci.\nMiejsca bez danych w wybranym zakresie są wypełniane bajtem 0xFF (stan wykasowanej pamięci flash/EPROM).
+HEXIMP_ERROR_TITLE=Błąd importu
+HEXIMP_ERROR_CHECKSUM=Plik zawiera błędną sumę kontrolną lub uszkodzone dane i nie może zostać zaimportowany jako Intel HEX / Motorola S-Record.
+
+# ── Okno zgód ────────────────────────────────────────────────────────────────
+CONSENT_TITLE=Warunki korzystania
+CONSENT_CHECK=Przeczytałem i akceptuję warunki korzystania (część I).
+CONSENT_ACCEPT=Akceptuję
+CONSENT_DECLINE=Nie akceptuję
+CONSENT_TERMS=I. WARUNKI KORZYSTANIA Z APLIKACJI MyPuppyD\n\n1. Charakter aplikacji. MyPuppyD jest oprogramowaniem w fazie rozwoju (otwarta alfa). Może zawierać błędy, a jego działanie i zakres funkcji mogą się zmieniać między wersjami. Aplikacja jest udostępniana w stanie „takim, jaki jest” — bez gwarancji poprawności, kompletności ani przydatności wyników do określonego celu.\n\n2. Co robi aplikacja. MyPuppyD rozpoznaje sterownik silnika (ECU) na podstawie wczytanego pliku BIN, wyszukuje w nim mapy, pozwala je przeglądać i edytować, zapisuje wersje projektu z historią zmian oraz udostępnia gotowe rozwiązania serwisowe (m.in. DPF, EGR, DTC, AdBlue). Wszystkie wyniki — rozpoznanie, adresy map, wartości, sumy kontrolne, rozwiązania — są propozycją wymagającą samodzielnej weryfikacji.\n\n3. Odpowiedzialność użytkownika. Za sposób wykorzystania wyników — w szczególności za wgranie zmodyfikowanego oprogramowania do pojazdu — oraz za zgodność takich działań z obowiązującym prawem (m.in. przepisami o homologacji, emisji spalin, bezpieczeństwie ruchu i gwarancji producenta) odpowiada wyłącznie użytkownik. Autor nie ponosi odpowiedzialności za szkody wynikłe z korzystania z aplikacji lub jej wyników, w najszerszym zakresie dopuszczonym przez prawo; nie dotyczy to odpowiedzialności, której zgodnie z prawem nie można wyłączyć.\n\n4. Połączenia sieciowe. Aplikacja może przy każdym uruchomieniu łączyć się z repozytorium aktualizacji autora oraz z publicznymi urzędami znacznika czasu, aby sprawdzić dostępność nowszej wersji i ważność wersji bieżącej. Bez tego połączenia aplikacja może odmówić uruchomienia. Nie są przy tym wysyłane żadne dane z Twoich plików ani projektów; operator serwera otrzymuje wyłącznie dane techniczne połączenia (m.in. adres IP). Nowa wersja jest pobierana i instalowana tylko po Twoim potwierdzeniu w oknie aktualizacji.\n\n5. Zgłaszanie problemów. Przycisk „Zgłoś problem” wysyła Twoje zgłoszenie (opis oraz dobrowolnie dodane załączniki, spakowane do ZIP) wyłącznie na Twoje wyraźne żądanie, tym samym kanałem co dane diagnostyczne (patrz część II).\n\n6. Dane diagnostyczne. Automatyczne wysyłanie danych diagnostycznych jest opisane w części II i wymaga osobnej, dobrowolnej zgody, którą możesz wycofać w każdej chwili w Ustawieniach (zakładka „Zgody”). Brak tej zgody nie ogranicza działania aplikacji.\n\n7. Własność intelektualna. Aplikacja, jej baza wzorców rozpoznawania (dostarczana w postaci zaszyfrowanej) i pliki towarzyszące są chronione prawem autorskim. Nie wolno ich dekompilować, wyodrębniać ani rozpowszechniać poza aplikacją — z wyjątkiem przypadków dozwolonych przez bezwzględnie obowiązujące przepisy.\n\n8. Akceptacja i zmiany. To okno pojawia się przy pierwszym uruchomieniu oraz po każdej aktualizacji. Korzystanie z aplikacji wymaga akceptacji warunków; bez niej aplikacja się zamyka. Zmienione warunki są przedstawiane do ponownej akceptacji.\n
+CONSENT_DIAG_INFO=II. INFORMACJA O DANYCH DIAGNOSTYCZNYCH (zgoda opcjonalna)\n\nCo jest wysyłane. Po zaznaczeniu zgody aplikacja — wyłącznie w chwili eksportu pliku (BIN/HEX/S19) — wysyła automatycznie:\n• plik projektu (.prj) spakowany w archiwum ZIP, jeżeli w projekcie użyto własnego rozwiązania albo osadzono plik map. Plik projektu zawiera: oryginalny wczytany plik BIN sterownika, osadzony plik map (CSV/XDF), listę wersji projektu z ich nazwami i opisami, historię zmian (adresy, wartości przed i po, Twoje opisy) oraz dane identyfikacyjne sterownika odczytane z pliku (typ, numery SW/HW, numer Bosch i podobne);\n• opis użytych własnych rozwiązań: nazwa/typ, rodzina sterownika, wzorzec bajtów, zamiana, przesunięcie oraz komentarz wpisany przy ich tworzeniu;\n• rodzinę sterownika i nazwę pliku map (samą nazwę, bez ścieżki).\nNie są wysyłane: ścieżki plików na Twoim komputerze, nazwa komputera, nazwa użytkownika, dane licencji ani informacje o Twoim systemie. Operator usługi transmisji otrzymuje jedynie dane techniczne połączenia (m.in. adres IP).\n\nCel. Dane służą wyłącznie do rozwoju aplikacji: poprawy rozpoznawania sterowników i map, weryfikacji rozwiązań serwisowych oraz usuwania błędów. Nie są używane do marketingu ani profilowania.\n\nAdministrator i podstawa prawna. Administratorem danych jest autor aplikacji MyPuppyD — CyfroTech Robert Bittner, Cyfrotech.zamuwienia@outlook.com, Rokitki Tczewskie Wiśniowa 6c. Podstawą przetwarzania jest Twoja zgoda (art. 6 ust. 1 lit. a RODO). Plik sterownika i Twoje opisy mogą zawierać dane osobowe (np. numer VIN zapisany w pamięci sterownika, dane wpisane przez Ciebie w opisach wersji lub komentarzach) — wysyłając je, potwierdzasz, że masz do tego prawo.\n\nOdbiorcy i przekazywanie poza EOG. Dane są przesyłane komunikatorem do prywatnego kanału autora. Serwery znajdują się także poza Europejskim Obszarem Gospodarczym; przekazanie odbywa się na podstawie Twojej wyraźnej zgody (art. 49 ust. 1 lit. a RODO). Wiąże się to z ryzykiem, że dane nie będą objęte ochroną równoważną RODO — nie ma decyzji stwierdzającej odpowiedni stopień ochrony ani innych zabezpieczeń w rozumieniu art. 46 RODO. \n\nOkres przechowywania. Dane są przechowywane tak długo, jak są potrzebne do celów rozwoju aplikacji, albo do Twojego żądania ich usunięcia — w zależności od tego, co nastąpi wcześniej.\n\nTwoje prawa. Zgoda jest dobrowolna i możesz ją wycofać w każdej chwili: Ustawienia → Zgody → odznacz pole i zapisz; od tej chwili nic nie jest wysyłane. Wycofanie nie wpływa na zgodność z prawem wysyłek dokonanych wcześniej. Masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia oraz wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych. Wysyłane dane nie są łączone z Twoją tożsamością, dlatego do realizacji praw dotyczących konkretnej wysyłki może być potrzebne wskazanie pliku lub daty (art. 11 RODO).
+CONSENT_DIAG_CHECK=Zgoda na wysyłanie danych diagnostycznych służących do rozwoju
+CONSENT_ALL_CHECK=Zaznacz wszystkie
+CONSENT_DEV_CHECK=Przyjmuję do wiadomości, że produkt jest w trakcie rozwoju i może zawierać błędy.
+CONSENT_RISK_CHECK=Akceptuję ryzyko prawne związane z modyfikacjami — wszelkie uchybienia prawne są odpowiedzialnością użytkownika końcowego.
+
+# ── Wyłącznik wersji ───────────────────────────────────────────────────────────
+GATE_MSGBOX_TITLE=Wersja niedostępna
+GATE_EXPIRED_A=Ta wersja programu wygasła (ważna była do
+GATE_EXPIRED_B=).\nPobierz nowszą wersję.
+GATE_NETWORK_ERROR=Wymagane jest połączenie z internetem, aby uruchomić program (nie udało się sprawdzić ważności tej wersji).
+GATE_INVALID_RESPONSE=Nie udało się odczytać informacji o ważności wersji (nieprawidłowa odpowiedź serwera).
+GATE_INVALID_SIGNATURE=Informacja o ważności wersji ma nieprawidłowy podpis — nie można jej zweryfikować.
+GATE_NO_TIME_SOURCE=Nie udało się ustalić aktualnej daty z żadnego serwera. Sprawdź połączenie z internetem i spróbuj ponownie.
+SYS_MSGBOX_TITLE=MyPuppyD — stan systemu
+SYS_DAYS=dni
+SYS_CLOCK_BACK_A=Zegar komputera jest cofnięty. Wskazuje 
+SYS_CLOCK_BACK_B=, a system był aktywny jeszcze 
+SYS_CLOCK_BACK_C= (Windows Update / synchronizacja czasu). Ustaw poprawną datę i godzinę, po czym uruchom program ponownie.
+SYS_SEARCH_STALE_A=Ten komputer nie sprawdzał dostępnych aktualizacji Windows od 
+SYS_SEARCH_STALE_B=. Masz nieaktualny system — otwórz Windows Update, sprawdź aktualizacje i uruchom program ponownie.
+SYS_INSTALL_STALE_A=Ostatnia aktualizacja Windows została zainstalowana 
+SYS_INSTALL_STALE_B=. Dla tej wersji systemu dopuszczalne jest najwyżej 
+SYS_INSTALL_STALE_C=. Zaktualizuj system i uruchom program ponownie. Wykryto:
+SYS_NET_BEHIND_A=Data otrzymana z sieci (
+SYS_NET_BEHIND_B=) jest wcześniejsza niż ostatnia aktywność tego komputera (
+SYS_NET_BEHIND_C=). Połączenie z serwerem jest podstawione. Aplikacja nie uruchomi się przez takie połączenie.
+GATE_TLS_UNTRUSTED=Połączenie z serwerem przechodzi przez certyfikat spoza zaufanych korzeni Windows (proxy przechwytujące lub podsłuch). Aplikacja nie uruchomi się przez takie połączenie.
+GATE_TAMPERED=Data podana przez serwer aktualizacji nie zgadza się z podpisanym znacznikiem czasu. Wykryto manipulację połączeniem — aplikacja nie uruchomi się.
+GATE_UNKNOWN_ERROR=Nieznany błąd.
+GATE_RT_TITLE=Tryb ograniczony
+GATE_RT_NETWORK=Zakłócenie połączenia internetowego. Funkcje wrażliwe są chwilowo wstrzymane do czasu przywrócenia połączenia. Pracę możesz zapisać.
+GATE_RT_FORCED=Dostępna jest nowsza wersja programu. Ta wersja nie jest już obsługiwana — zapisz pracę i zaktualizuj aplikację. Do tego czasu możliwy jest tylko zapis.
+GATE_RT_EXPIRED=Ta wersja programu wygasła. Możliwy jest wyłącznie zapis pracy — zaktualizuj aplikację.
+GATE_RT_BLOCKED=Ta funkcja jest niedostępna w trybie ograniczonym. Zapisz pracę i przywróć połączenie lub zaktualizuj aplikację.
+# ── Starszy Windows (7 / 8.x) — patrz sys_check.h i gate_check.cpp::OldWindowsHint ──
+SYS_OLDWIN_STALE_A=Ten komputer od
+SYS_OLDWIN_STALE_B= nie łączył się z serwerami Microsoftu (Windows Update, automatyczna aktualizacja certyfikatów głównych, sygnatury antywirusa Microsoft). Na tej wersji systemu wystarczy JEDNO z tych źródeł: włącz je, pozwól mu się połączyć i uruchom program ponownie. Wykryto:
+GATE_OLDWIN_TLS=Ten Windows nie obsługuje TLS 1.2 — bez tego nie da się połączyć z serwerem aktualizacji ani z urzędem czasu. Zainstaluj aktualizacje systemu (Windows 7: KB3140245 albo dowolna zbiorcza aktualizacja od 2016 r.) i uruchom program ponownie.
+GATE_OLDWIN_ROOTS=Ten Windows nie ma zaufanego certyfikatu głównego serwera. Włącz automatyczną aktualizację certyfikatów głównych (Windows Update → „Aktualizacja certyfikatów głównych") albo zainstaluj bieżące aktualizacje systemu, po czym uruchom program ponownie.
+GATE_OLDWIN_ROOTS_POLICY=Automatyczna aktualizacja certyfikatów głównych jest w tym systemie wyłączona zasadami (DisableRootAutoUpdate). Bez niej Windows nie zna certyfikatów serwera aktualizacji ani urzędu czasu. Włącz ją i uruchom program ponownie.
+
+# ── Auto-aktualizacja ──────────────────────────────────────────────────────────
+UPDATE_ERR_TITLE=Błąd aktualizacji
+UPDATE_ERR_NETWORK=Nie można sprawdzić aktualizacji (błąd sieci).
+UPDATE_ERR_PARSE=Aktualizacja: nie można odczytać version.json.
+UPDATE_ASK_TITLE=Aktualizacja
+UPDATE_ASK_A=Dostępna aktualizacja:
+UPDATE_ASK_B=\n\nZaktualizować teraz?
+UPDATE_ERR_DOWNLOAD=Nie udało się pobrać aktualizacji.
+UPDATE_ERR_SIGNATURE=Aktualizacja odrzucona — podpis informacji o wersji nie pasuje do klucza wbudowanego w tę aplikację. Pobranie zostało przerwane dla bezpieczeństwa.
+UPDATE_ERR_FILE_HASH=Aktualizacja odrzucona — pobrany plik ma inną sumę kontrolną niż podpisana. Pobranie zostało przerwane dla bezpieczeństwa.
+UPDATE_ERR_SAVE=Nie można zapisać pliku aktualizacji na dysku.
+UPDATE_ERR_SCRIPT=Nie można utworzyć skryptu aktualizacji.
+SPLASH_CHECKING=Sprawdzanie połączenia i aktualizacji…
+SPLASH_RETRY=Brak połączenia — próba {n}/{max} nieudana. Ponawiam, oczekiwanie na odpowiedź do {s} s…
+SPLASH_SYNC=Pliki pomocnicze aktualizują się w tle…
+
+# ── Okno zgłoszeń ──────────────────────────────────────────────────────────────
+REPORT_WND_TITLE=Zgłoś problem
+REPORT_EMPTY_WARNING=Opisz najpierw, na czym polega problem.
+REPORT_SENT_OK=Zgłoszenie wysłane. Dziękujemy!
+REPORT_SENT_LOCAL_ONLY=Wysyłka się nie powiodła — zgłoszenie zapisano lokalnie w %USERPROFILE%\MyPuppyD\zgloszenia.log.
+REPORT_PLACEHOLDER_HINT=Opisz problem — co się stało, co robiłeś/aś przed tym, czego się spodziewałeś/aś.
+REPORT_ATTACH_HINT=Załączniki: maks. 45 MB na plik
+REPORT_BTN_ATTACH=Dodaj plik…
+REPORT_BTN_REMOVE=Usuń
+REPORT_ATTACH_TOO_BIG=Ten plik przekracza 45 MB i nie zostanie dołączony:
+REPORT_ATTACH_FAILED=Nie udało się wysłać załączników:
+REPORT_SENDING=Wysyłanie…
+REPORT_SENDING_HINT=Trwa wysyłka — nie zamykaj okna.
+REPORT_BTN_SEND=Wyślij
+
+# Mechaniki z parametrami (Vmax, temperatura zadana płynu, monitor EGT)
+MECH_FROM_FILE=parametry z pliku
+MECH_NOW=Teraz:
+MECH_RANGE=Zakres typu danych:
+MECH_BIT_STEP=bit, krok
+MECH_NEW_VAL=Nowa wartość; puste = bez zmian
+MECH_NEW_VAL_ALL=Nowa wartość — trafia do wszystkich {n} pozycji; puste = bez zmian
+MECH_ROWS=Wiersze:
+MECH_COLS=Kolumny:
+MECH_BTN_APPLY=Zastosuj
+MECH_BTN_RESTORE=Przywróć oryginał
+MECH_BTN_CANCEL=Anuluj
+MECH_ERR_NUM=Nieprawidłowa liczba:
+MECH_ERR_RANGE=wartość poza zakresem typu danych
+MECH_ON=WŁ
+MECH_OFF=WYŁ
+MECH_LOG_BYTES=Zmienione bajty:
+MECH_LOG_CELLS=Zmienione komórki: {n} z {m}
+MECH_LOG_TESTFILE=Plik testowy:
+MECH_LOG_CS=Suma kontrolna:
+MECH_LOG_NOFILE=Nie udało się zapisać pliku testowego
+MECH_LOG_RESTORED=Przywrócono oryginał
+MECH_LOG_NOPATTERN=BRAK WZORCA
+MECH_CS_FIXED=Poprawiona w kopii testowej
+MECH_CS_NOSUP=Nie poprawiona (brak obsługi sumy dla tego ECU) — popraw przed wgraniem
+MECH_CS_BUSY=Nie poprawiona (trwało sprawdzanie sumy w programie) — popraw przed wgraniem
+MECH_TXT_HEAD=plik TESTOWY
+MECH_TXT_DATE=Data:
+MECH_TXT_SRC=Plik źródłowy:
+MECH_TXT_KEY=klucz:
+MECH_TXT_PATTERN=Wzorzec:
+MECH_TXT_CHANGES=Zmiany:
+MECH_TXT_HOWTO=Jak testować:
+MECH_HINT_VMAX=1. Wgraj plik (bench/OBD) i sprawdź, czy nie pojawiły się nowe kody błędów.\n2. Ogranicznik WYŁĄCZONY: zamknięty tor lub hamownia rolkowa — brak odcięcia przy dawnym limicie (np. 250 km/h); odcięcie dopiero od obrotów/przełożenia.\n3. Nowa prędkość X km/h: łagodne ograniczenie momentu przy X km/h wg GPS (prędkościomierz zwykle zawyża o kilka %).\n4. Sprawdź tempomat/ACC oraz brak ostrzeżeń DSC.
+MECH_HINT_COOLTGT=1. Wgraj plik i sprawdź, czy nie pojawiły się nowe kody błędów (termostat, wentylator, czujnik płynu).\n2. Rozgrzej silnik: w danych na żywo temperatura płynu powinna ustalić się przy nowej wartości zadanej (postój i jazda ze stałą prędkością, kilka minut).\n3. Wentylator: przy temperaturach z mapy obroty wentylatora zgodne z nowymi wartościami; sprawdź też dobieg wentylatora po wyłączeniu silnika.\n4. Obserwuj wskaźnik temperatury w zestawie — przy zbyt niskiej wartości zadanej możliwy błąd termostatu.
+MECH_HINT_EGTMON=1. Wgraj plik i sprawdź listę kodów błędów — wyłączone kody czujników temperatury spalin nie powinny się pojawiać.\n2. Dane na żywo: odczyty czujników temperatury spalin bez zmian (zmienione są tylko progi i reakcje sterownika).\n3. Hamownia, pełne obciążenie: moc nie powinna spadać przy temperaturze przed turbiną poniżej nowego progu; kontroluj temperaturę zewnętrznym czujnikiem EGT.\n4. Wyższe progi to większe ryzyko uszkodzenia turbosprężarki i katalizatora — nie przekraczaj granic producenta turbiny.
+MECH_SRC_VMAX_BMW17=BMW Bosch EDC17 – ogranicznik prędkości
+MECH_SRC_COOL_BMW17=BMW Bosch EDC17 – temperatura zadana płynu
+MECH_I_VMAX_SW=Ogranicznik prędkości aktywny
+MECH_I_VMAX_V=Prędkość maksymalna pojazdu
+MECH_I_VMAX_CA=Limity prędkości wariantów kodowania
+MECH_I_COOL_INI=Temperatura zadana płynu – wartość startowa
+MECH_I_COOL_AFT=Temperatura zadana płynu po wyłączeniu silnika
+MECH_I_COOL_NTRQ=Temperatura zadana płynu wg obrotów i momentu
+MECH_I_COOL_TVEL=Temperatura zadana płynu wg temperatury i prędkości
+MECH_I_FAN=Obroty wentylatora wg temperatury płynu
+MECH_I_FAN_TRL=Obroty wentylatora wg temperatury płynu – jazda z przyczepą
+MECH_AX_TORQUE=Moment
+MECH_AX_RPM=Obroty
+MECH_AX_SPEED=Prędkość
+MECH_AX_TEMP=Temperatura
+MECH_AX_CLNT=Temp. płynu
+MECH_U_RPM=obr/min
+MECH_SRC_EGT_BMW17=BMW Bosch EDC17 – temperatura spalin, ochrona turbiny
+MECH_I_EGT_DTC_MON=Kody błędów monitorowania temperatury spalin
+MECH_I_EGT_DTC_SENS=Kody błędów czujników spalin przed katalizatorem i DPF
+MECH_I_EGT_T31=Próg ochrony silnika – temperatura spalin przed turbiną
+MECH_I_EGT_T40=Próg ochrony silnika – temperatura spalin przed katalizatorem utleniającym
+MECH_I_EGT_T31OFS=Korekta progu ochrony turbiny wg ciśnienia atmosferycznego
+MECH_I_EGT_TRQ=Minimalna redukcja momentu przy przegrzaniu turbosprężarki
+MECH_I_EGT_SENSMAX=Próg diagnostyczny czujników spalin (3003,6 = nieużywany)
+MECH_AX_PATM=Ciśnienie atmosferyczne
+MECH_AX_FUEL=Dawka paliwa
+MECH_AX_SENSOR=Czujnik
+MECH_U_MGSTK=mg/skok
+MECH_DTC_STATE=Aktywne w pliku: {n} z {m} kodów
+MECH_DTC_LIST=Kody:
+MECH_LOG_DTC_OFF=Wyłączone kody: {n}
+MECH_LOG_DTC_ON=Przywrócone kody: {n}
+LOP_BRANDS_FROM_ECU=(wg rozpoznanego sterownika — w pliku brak nazwy marki)
+MECH_SRC_COOL_BOSCH=Bosch EDC17/MED17 – temperatura zadana płynu
+MECH_SRC_MS4X={v}
+MECH_I_MS_VMAX=Prędkość maksymalna pojazdu (ogranicznik)
+MECH_I_MS_VMAX_MT=Prędkość maksymalna – skrzynia manualna
+MECH_I_MS_VMAX_AT=Prędkość maksymalna – skrzynia automatyczna
+MECH_I_MS_VMAX_ADD=Zapas twardego odcięcia ponad prędkość maksymalną (odcięcie pompy paliwa)
+MECH_I_MS_TCO_TOIL_MIN=Temperatura zadana płynu podczas rozgrzewania
+MECH_I_MS_TCO_TIA_MAX=Temperatura zadana płynu przy gorącym powietrzu lub oleju
+MECH_I_MS_TCO_EX_MAX=Temperatura zadana płynu przy gorącej chłodnicy (wyjście)
+MECH_I_MS_TCO_BOL=Temperatura zadana płynu na żądanie niskiej temperatury
+MECH_I_MS_TCO_MAP=Temperatura zadana płynu wg obrotów i obciążenia – klimatyzacja wyłączona
+MECH_I_MS_TCO_MAP_AC=Temperatura zadana płynu wg obrotów i obciążenia – klimatyzacja włączona
+MECH_I_MS_FAN_TCO=Minimalny bieg wentylatora wg temperatury na wyjściu chłodnicy
+MECH_AX_LOAD=Obciążenie
+MECH_AX_TCO_EX=Temp. wyjścia chłodnicy
+MECH_SRC_VMAX_VAG=VAG Bosch EDC17/MED17 – ograniczniki prędkości
+MECH_I_VAG_VSPDLIM=Prędkość maksymalna – ogranicznik główny
+MECH_I_VAG_VMAXFIX=Prędkość maksymalna – limit stały
+MECH_SRC_COOL_EDC16U=VAG Bosch EDC16U – temperatura zadana płynu
+MECH_I_C16_BASE=Temperatura zadana płynu wg obrotów i obciążenia (momentu)
+MECH_I_C16_COR2=Korekta temperatury zadanej wg prędkości i temperatury powietrza
+MECH_I_C16_COTMAX=Próg temperatury płynu na wyjściu chłodnicy
+MECH_I_C16_COTHI=Próg górny (włączenie) – temperatura na wyjściu chłodnicy
+MECH_I_C16_COTLO=Próg dolny (wyłączenie) – temperatura na wyjściu chłodnicy
+MECH_AX_AIRT=Temp. powietrza
+MECH_I_MS_VMAX_SW=Ogranicznik prędkości aktywny
+MECH_SRC_COOL_VAGFAN=VAG Bosch EDC17/MED17 – temperatura zadana silnika
+MECH_I_VF_TRQ=Temperatura zadana silnika wg obrotów i momentu
+MECH_I_VF_TRQRGN=Temperatura zadana silnika wg obrotów i momentu – podczas regeneracji DPF
+MECH_I_VF_VEL=Temperatura zadana silnika wg prędkości i temperatury
+MECH_SRC_EGT_DTC=Kody błędów temperatury spalin
+MECH_I_EGT_DTC_SAE=Kody błędów czujników i monitorowania temperatury spalin
+MECH_SRC_EGT_VAG=VAG Bosch EDC17 – ochrona turbiny
+MECH_I_EGT_VAG_MAX=Próg maksymalny temperatury przed turbiną
+MECH_I_EGT_VAG_MAP=Próg temperatury przed turbiną wg obrotów i prędkości
+MECH_I_EGT_VAG_BOOST=Próg temperatury przed turbiną przy doładowaniu
+MECH_SRC_EGT_FIAT=Bosch EDC17 – progi temperatury przed turbiną
+MECH_I_EGT_SP_MAX=Próg temperatury przed turbiną – maksymalny
+MECH_I_EGT_SP_NRM=Próg temperatury przed turbiną – normalny
+MECH_I_EGT_SP_OVHT=Próg temperatury przed turbiną – ochrona przed przegrzaniem
+MECH_I_EGT_SP_SAFE=Próg temperatury przed turbiną – tryb awaryjny
+MECH_SRC_EGT_T3LIM=Bosch EDC17 – ogranicznik temperatury przed turbiną
+MECH_I_EGT_T3_MAXDES=Maksymalna temperatura przed turbiną
+MECH_I_EGT_T3_RLSMAX=Histereza ograniczenia – próg górny
+MECH_I_EGT_T3_RLSMAXDEF=Histereza ograniczenia – próg górny (wartość zastępcza)
+MECH_I_EGT_T3_RLSMIN=Histereza ograniczenia – próg dolny
+MECH_I_EGT_T3_RLSMINDEF=Histereza ograniczenia – próg dolny (wartość zastępcza)
+MECH_I_EGT_T3_SAFRST=Temperatura wyjścia z trybu awaryjnego
+MECH_AX_POINT=Punkt
+MECH_SRC_EGT_MNF=Bosch MED17 – ochrona kolektora wydechowego
+MECH_I_EGT_MNF_MAX=Maksymalna temperatura ścianki kolektora wydechowego
+MECH_I_EGT_MNF_CUR=Próg ochrony kolektora wg temperatury spalin
+MECH_AX_TEXH_MOD=Temperatura spalin (model)
+MECH_SRC_EGT_CMPPRT=Delphi DCM6.1 – ochrona katalizatora, DPF i SCR
+MECH_I_EGT_CP_OXIDS=Maksymalna temperatura za katalizatorem utleniającym
+MECH_I_EGT_CP_OXIUS=Maksymalna temperatura przed katalizatorem utleniającym
+MECH_I_EGT_CP_DPFDS=Maksymalna temperatura za filtrem DPF
+MECH_I_EGT_CP_DPFUS=Maksymalna temperatura przed filtrem DPF
+MECH_I_EGT_CP_SCRDS=Maksymalna temperatura za katalizatorem SCR
+MECH_I_EGT_CP_SCRUS=Maksymalna temperatura przed katalizatorem SCR
+CLR_LOP_SCALE_HDR=Okna mechanik – skale temperatur [°C]
+CLR_LOP_SCALE_HI=Góra
+CLR_LOP_SCALE_MID=Środek
+CLR_LOP_SCALE_LO=Dół
+CLR_LOP_SCALE_COOL=Płyn chłodzący
+CLR_LOP_SCALE_EGT=Spaliny (EGT)
+CLR_LOP_SCALE_CHI=Góra – przekroczenie
+CLR_LOP_SCALE_CMID=Środek – wartość optymalna
+CLR_LOP_SCALE_CLO=Dół – za nisko
+CLR_LOP_NOW=Wartość obecna z pliku
+CLR_LOP_SCALE_ERR=Wartości skali muszą spełniać: dół < środek < góra.
+CLR_LOP_SCALE_COLORS=Kolory skal (góra / środek / dół):
+MECH_DTC_NODESC=brak opisu kodu
+MECH_SRC_COOL_TKW=BMW Bosch MEVD17 – termostat mapowy
+MECH_I_COOL_TKW_NO=Temperatura zadana płynu – tryb normalny
+MECH_I_COOL_TKW_HK=Temperatura zadana płynu – tryb pośredni
+MECH_I_COOL_TKW_HI=Temperatura zadana płynu – tryb wysokiej temperatury
+MECH_I_COOL_TKW_EC=Temperatura zadana płynu – tryb ECO
+MECH_AX_TAMB=Temperatura otoczenia
+MECH_SRC_VMAX_MSD=BMW Siemens MSD87/MSV90 – ograniczniki prędkości, wersja {v}
+MECH_I_VMAX_VARIANTS=Prędkość maksymalna – limity wariantów kodowania
+MECH_SRC_COOL_SIMOS18=VAG Siemens Simos18 – temperatura zadana silnika, wersja {v}
+MECH_I_FAN_OIL=Temperatura zadana silnika wg temperatury oleju
+MECH_I_FAN_IA=Temperatura zadana silnika wg temperatury powietrza dolotowego
+MECH_I_FAN_ENV=Temperatura zadana silnika wg temperatury otoczenia
+MECH_SRC_VMAX_EDC16=BMW Bosch EDC16 – ogranicznik prędkości
+MECH_I_VMAX_PRP=Prędkość maksymalna (327,67 = ogranicznik wyłączony)
+MECH_SRC_COOL_TKW_MG1=BMW Bosch MG1 – termostat mapowy
+MECH_SRC_VMAX_ME70=Volvo Bosch ME7.0 – ograniczniki prędkości wg kodowania CEM, wersja {v}
+MECH_SRC_VMAX_VES=Bosch EDC16C39 (CNH) – regulator prędkości jazdy
+MECH_I_VMAX_VES=Prędkość maksymalna jazdy wg wariantu
+MECH_AX_VARIANT=Wariant
+MECH_SRC_VMAX_MEVD=BMW Bosch MEVD17 – ograniczniki prędkości wg kodowania, wersja {v}
+MECH_SRC_VMAX_EDC15P=VAG Bosch EDC15P – ogranicznik prędkości (HGB)
+MECH_I_VMAX_HGB_MIN=Ogranicznik prędkości – najmniejsza dozwolona wartość
+MECH_I_VMAX_HGB_MAX=Ogranicznik prędkości – największa dozwolona wartość
+MECH_I_VMAX_HGB_SUB=Ogranicznik prędkości – wartość zastępcza (0 = wyłączony)
+MECH_SRC_VMAX_M52=Bosch Motronic M5.2 – ogranicznik prędkości
+MECH_I_VMAX_M52_SOFT=Prędkość maksymalna – próg ogranicznika
+MECH_I_VMAX_M52_HYS=Histereza twardego ogranicznika prędkości
+MECH_SRC_VMAX_ME21=Bosch Motronic ME2.1 – ograniczenie prędkości
+MECH_I_VMAX_ME21=Próg ograniczenia prędkości (dwie wartości)
+MECH_SRC_COOL_M52=Bosch Motronic M5.2 – termostat sterowany elektrycznie
+MECH_I_COOL_M52_DK=Temperatura zadana płynu wg prędkości i przepustnicy
+MECH_I_COOL_M52_TANS=Temperatura zadana płynu wg prędkości i temperatury powietrza dolotowego
+MECH_I_COOL_M52_KF=Temperatura zadana płynu wg obrotów i obciążenia
+MECH_I_COOL_M52_TANS1=Temperatura zadana płynu – warunek temperatury powietrza dolotowego
+MECH_I_COOL_M52_VFZ=Temperatura zadana płynu – warunek prędkości
+MECH_AX_THROTTLE=Przepustnica
+MECH_SRC_MS4X_LOC={v} – parametry wyszukane w kodzie programu
+MECH_I_MS_VMAX_AMT=Prędkość maksymalna – skrzynia sekwencyjna (SSG)
+MECH_SRC_LOC_DATA={v} – parametry odnalezione po układzie danych w pliku
