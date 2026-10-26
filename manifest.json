@@ -1,5 +1,5 @@
 {
-  "version": "0.0.2",
+  "version": "0.0.3",
   "files": [
     {
       "path": "data/patterns_dll/6HP26A.dll",
@@ -707,16 +707,26 @@
       "size": 180851
     },
     {
+      "path": "user_messages/english.dtc",
+      "sha256": "9b6a73400a6f142d97f7f994145ac4debbdd7606c4f69fd3876407394fc5f3b5",
+      "size": 952138
+    },
+    {
       "path": "user_messages/english.lang",
-      "sha256": "51d587ddac558b016bb8d84d726ccbe31b28375be0925a9eb2d8b887f31cc723",
-      "size": 41947
+      "sha256": "e0cee7d2c71429a9192f6914d9186fc2d3779f21c09711db24a7247f48242ed4",
+      "size": 60267
+    },
+    {
+      "path": "user_messages/polski.dtc",
+      "sha256": "2adb3d274575c28281f19612709caaae8fb1aca2509bc811099631aff3da607b",
+      "size": 1222365
     },
     {
       "path": "user_messages/polski.lang",
-      "sha256": "acbdf3c6aafc378e165bb7098e43e717a01ef1591d083a9f25c10b835a28a2a7",
-      "size": 44055
+      "sha256": "2be0ba901bf470377d14ffe8d25f201eb7cf9ef712524899db9f561ad14a53af",
+      "size": 63744
     }
   ],
-  "files_digest": "9d916c7cb2f14e07257cd5043e7f2e9627666a8463e5e73d941170cd4162fd32",
-  "sig": "m4VCTF7UjjjmfnYHWoXZ/WYYWf4GCRlp6HyqHFNxzZqMv5Uxtn1TSLGoRrgLWMDqj5C7Ck8qPQAz6VE/HMKZ3g=="
+  "files_digest": "5333ebcd69dddb15bc81dc5e1b0a930d61bf4f1a75ecd2475cacd32e89c45cf7",
+  "sig": "5L20r7SLVLSTjrEkhpHm7j3643xYQYHiTEaae7F+9whj4opAm1858YdYSkmrE/406JSQgE+TJSt/inNwwlDOTA=="
 }
