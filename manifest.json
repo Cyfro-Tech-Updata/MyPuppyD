@@ -713,8 +713,8 @@
     },
     {
       "path": "user_messages/english.lang",
-      "sha256": "e0cee7d2c71429a9192f6914d9186fc2d3779f21c09711db24a7247f48242ed4",
-      "size": 60267
+      "sha256": "8c22095b56f2ee77cdfd7af0f2f6c041f8157037a517e8db510818e38ea9e6a3",
+      "size": 60305
     },
     {
       "path": "user_messages/polski.dtc",
@@ -723,10 +723,10 @@
     },
     {
       "path": "user_messages/polski.lang",
-      "sha256": "2be0ba901bf470377d14ffe8d25f201eb7cf9ef712524899db9f561ad14a53af",
-      "size": 63744
+      "sha256": "1e1a395bb4c98e644726e5a67a6a4f773444e8e45c2971a411ee62c46ba93979",
+      "size": 63787
     }
   ],
-  "files_digest": "5333ebcd69dddb15bc81dc5e1b0a930d61bf4f1a75ecd2475cacd32e89c45cf7",
-  "sig": "5L20r7SLVLSTjrEkhpHm7j3643xYQYHiTEaae7F+9whj4opAm1858YdYSkmrE/406JSQgE+TJSt/inNwwlDOTA=="
+  "files_digest": "7d625ee75a18db8607d09b3d0ec1eee81c7bdf07a1e4372878f75b4ebc425a5c",
+  "sig": "S9pYL3bxN4pTaMJBgKSLR8YBL1m0E9HoLGI6s06NvJ/dHkUAlXVw9XLfhOhUwQ9s5OVb8oTuHLmJkPziYUFIjQ=="
 }
