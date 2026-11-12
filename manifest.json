@@ -1,5 +1,5 @@
 {
-  "version": "0.0.4",
+  "version": "0.0.5p",
   "files": [
     {
       "path": "data/patterns_dll/6HP26A.dll",
@@ -868,5 +868,5 @@
     }
   ],
   "files_digest": "28bb8e6e24af6cc16b9df1c5df3db0e3023c5654dc2c3cd1bcbba0a68dff9eaa",
-  "sig": "SLHdcWSXISoBYSzocwihb/SK4wSYlqH7+LKSkJCyqruhVT/oiS8TVZ6sLwNTOTgBw2NR9F9g9K5iexh3HJYw9A=="
+  "sig": "xI+sKuDMkB6hPoIZqQA8cdt1Ben4TOuaCMStrtveOxm0ZGrDBtzfcSiJ0qQCCX16nuDjiVNflOW4ZtlDXFZVMw=="
 }
